@@ -9,6 +9,7 @@
     list-style: none;
     text-decoration: none;
     font-family: "Roboto", serif;
+    scroll-behavior:smooth;
 }
 
 body {
@@ -30,7 +31,7 @@ header {
     display: flex;
     width: 100%;
     height: 95px;
-    background-color: #ffffff9f;
+    background-color: #ffffffc9;
 }
 
 .header-main {
@@ -61,7 +62,7 @@ header {
 
 #sec-banner {
     width: 100%;
-    height: 565px;
+    height: 640px;
     display: flex;
 }
 .banner-main {
@@ -123,4 +124,174 @@ header {
 .qm-image img {
     width: inherit;
     height: inherit;
+}
+
+/* Inicio Quem Somos */
+#como-trabalhamos {
+    width: 100%;
+    height: 585px;
+    background-image: url('../assets/background-two.png');
+    background-repeat: no-repeat;
+    background-size:100vw;
+}
+.comoTrabalhamos-Main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comoTrabalhamos-title{
+    color: #02D703;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Inicio Serviços*/
+#servicos {
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.servicos-Main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.servicos-text {
+    font-size: 70px;
+    font-weight: 700;
+    color: #020C2F;
+}
+
+.servicos-grid {
+    display: flex;
+    gap: 60px;
+}
+
+.columns-servicos-left, .columns-servicos-rigth {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.servicos-cards {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+.info-cards {
+    text-align: right;
+}
+
+.info-cards-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #020C2F;
+}
+.info-cards-desc {
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 300px;
+    text-align: right;
+    color: #020C2F;
+}
+.icon-cards,.icon-cards-r {
+    width: 75px;
+    height: 75px;
+}
+
+
+
+.servicos-cards-r {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: right;
+    gap: 15px;
+}
+.info-cards-r {
+    text-align: left;
+}
+
+.info-cards-title-r {
+    font-size: 24px;
+    font-weight: 700;
+    color: #020C2F;
+}
+.info-cards-desc-r {
+    font-size: 16px;
+    font-weight: 200;
+    max-width: 300px;
+    color: #020C2F;
+}
+
+/* Inicio Contatos */
+#contatos {
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/background-three.png');
+    background-repeat: no-repeat;
+    background-size:100vw;
+    display: flex;
+}
+
+.contatos-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contatos-title {
+    font-size: 55px;
+    font-weight: 700;
+    color: #02D703;
+}
+.contatos-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contatos-loc {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.contatos-midias{
+    display: flex;
+    gap: 20px;
+}
+
+.contatos-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.contatos-card img:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*Inicio Footer*/
+footer {
+    background-color: black;
+    height: 60px;
+    display: flex;
+}
+.footer-copy {
+    color: #fff;
+    font-size: 14px;
 }

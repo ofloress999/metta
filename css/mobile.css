@@ -1,0 +1,524 @@
+@media (min-width: 320px) and (max-width: 420px) {
+    /* Geral */
+    body {
+        background-image: url('../assets/background-one.png');
+        background-size: 100vh  100vw;  /* Mantém a imagem de fundo responsiva */
+    }
+
+    .container {
+        width: 100%;  /* Usando 100% da largura da tela */
+        margin: 0 auto;
+    }
+
+    /* Inicio Header */
+    header {
+        height: 50px;
+        width: 100vw;
+        display: flex;
+        background-color: #ffffffbb;
+    }
+
+    .header-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-header-main {
+        display: none;
+    }
+
+    .logo-header-main img {
+        width: 100px;
+    }
+
+
+    /* Banner */
+    #sec-banner {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;  /* Ajuste da altura do banner para telas pequenas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-h1 {
+        font-size: 63px;  /* Reduz o tamanho do título */
+        color: #02D703;
+        font-weight: 900;
+    }
+
+    .banner-p {
+        font-size: 16px;  /* Reduz o tamanho do texto */
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        max-width: 90%;  /* Ajuste da largura do texto */
+        margin-top: 10px;
+    }
+
+    /* Quem Somos */
+    #quem-somos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .quem-somos-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .qm-title {
+        font-size: 30px;  /* Ajuste do tamanho do título */
+        font-weight: 700;
+        color: #020C2F;
+        text-align: center;
+    }
+
+    .qm-txt {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .qm-desc {
+        font-size: 12px;  /* Reduzindo o tamanho da descrição */
+        font-weight: 400;
+        text-align: justify;
+        max-width: 100%;  /* Ajuste da largura do texto */
+        margin-top: 10px;
+        color: #333333;
+    }
+
+    .qm-image {
+        width: 100%;
+        height: auto;  /* Ajuste da imagem para se adaptar ao tamanho da tela */
+    }
+
+    /* Como Trabalhamos */
+    #como-trabalhamos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;  /* Ajuste da altura */
+        background-image: url('../assets/background-two.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .comoTrabalhamos-Main{
+        margin: 0px;
+    }
+
+    .comoTrabalhamos-title {
+        font-size: 24px;  /* Reduzindo o tamanho do título */
+        color: #02D703;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    /* Serviços */
+    #servicos {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicos-text {
+        font-size: 30px;  /* Ajuste do tamanho do texto */
+        font-weight: 700;
+        color: #020C2F;
+    }
+
+    .columns-servicos-left, .columns-servicos-rigth {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .servicos-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .servicos-cards, .servicos-cards-r {
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        flex-direction:column-reverse;
+        gap: 5px;
+    }
+
+    .info-cards, .info-cards-r {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: start; /* Garantir que o conteúdo dentro da icon-cards seja centralizado */
+        align-items: center; /* Garantir o alinhamento vertical */
+        flex-direction: column;
+    }
+
+    .info-cards-title, .info-cards-title-r {
+        font-size: 18px;  /* Ajuste de tamanho para títulos menores */
+        font-weight: 700;
+        color: #020C2F;
+    }
+
+    .info-cards-desc, .info-cards-desc-r {
+        font-size: 14px;  /* Ajuste do tamanho da descrição */
+        font-weight: 200;
+        max-width: 100%;  /* Ajuste do tamanho das descrições */
+        text-align: center;
+        color: #020C2F;
+    }
+
+    .icon-cards img, .icon-cards-r img {
+        width: 100%; /* Garantir que a imagem ocupe toda a largura da div */
+        height: 100%; /* Garantir que a altura seja proporcional */
+    }
+
+    /* Contatos */
+    #contatos {
+        width: 100%;
+        height: auto;  /* Ajuste da altura */
+        background-image: url('../assets/background-three.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contatos-title {
+        font-size: 30px;  /* Ajuste do tamanho do título */
+        font-weight: 700;
+        color: #02D703;
+        text-align: center;
+    }
+
+    .contatos-loc {
+        font-size: 14px;  /* Reduzindo o tamanho do texto do endereço */
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+    .contatos-midias {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .contatos-card img {
+        width: 40px;  /* Reduzindo o tamanho dos ícones */
+        height: 40px;
+        border-radius: 15px;
+    }
+
+    .contatos-card img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /* Footer */
+    footer {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-copy {
+        color: #fff;
+        font-size: 12px;  /* Ajuste do tamanho do texto */
+    }
+}
+
+
+@media (max-width: 768px) {
+    /* Geral */
+    body {
+        background-image: url('../assets/background-one.png');
+        background-size: 100%  100vh;  /* Mantém a imagem de fundo responsiva */
+    }
+
+    .container {
+        width: 100%;  /* Usando 100% da largura da tela */
+        margin: 0 auto;
+    }
+
+    /* Inicio Header */
+    header {
+        height: 100px;
+        width: 100vw;
+        display: flex;
+        background-color: #ffffffbb;
+    }
+
+    .header-main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-header-main {
+        display: none;
+    }
+
+    .logo-header-main img {
+        width: 200px;
+    }
+
+
+    /* Banner */
+    #sec-banner {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: auto;  /* Ajuste da altura do banner para telas pequenas */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-h1 {
+        font-size: 92px;  /* Reduz o tamanho do título */
+        color: #02D703;
+        font-weight: 900;
+    }
+
+    .banner-p {
+        font-size: 22px;  /* Reduz o tamanho do texto */
+        color: #fff;
+        font-weight: 300;
+        text-align: center;
+        max-width: 90%;  /* Ajuste da largura do texto */
+        margin-top: 10px;
+    }
+
+    /* Quem Somos */
+    #quem-somos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .quem-somos-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .qm-title {
+        font-size: 58px;  /* Ajuste do tamanho do título */
+        font-weight: 700;
+        color: #020C2F;
+        text-align: center;
+    }
+
+    .qm-txt {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .qm-desc {
+        font-size: 22px;  /* Reduzindo o tamanho da descrição */
+        font-weight: 400;
+        text-align: justify;
+        padding: 0px 30px 0px 30px;
+        max-width: 100%;  /* Ajuste da largura do texto */
+        margin-top: 30px;
+        color: #333333;
+    }
+
+    .qm-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;  /* Ajuste da imagem para se adaptar ao tamanho da tela */
+    }
+
+    .qm-image img{
+        width: 400px;
+        height: auto;  /* Ajuste da imagem para se adaptar ao tamanho da tela */
+    }
+
+    /* Como Trabalhamos */
+    #como-trabalhamos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;  /* Ajuste da altura */
+        background-image: url('../assets/background-two.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .comoTrabalhamos-Main{
+        margin: 0px;
+    }
+
+    .comoTrabalhamos-title {
+        font-size: 58px;  /* Reduzindo o tamanho do título */
+        color: #02D703;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    /* Serviços */
+    #servicos {
+        width: 100%;
+        padding: 20px;
+        height: auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicos-text {
+        font-size: 58px;  /* Ajuste do tamanho do texto */
+        font-weight: 700;
+        color: #020C2F;
+    }
+
+    .columns-servicos-left, .columns-servicos-rigth {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .servicos-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .servicos-cards, .servicos-cards-r {
+        display: flex;
+        align-items: center; /* Alinha verticalmente */
+        justify-content: center; /* Centraliza horizontalmente */
+        flex-direction:column-reverse;
+        gap: 5px;
+    }
+
+    .info-cards, .info-cards-r {
+        width: auto;
+        height: auto;
+        display: flex;
+        justify-content: start; /* Garantir que o conteúdo dentro da icon-cards seja centralizado */
+        align-items: center; /* Garantir o alinhamento vertical */
+        flex-direction: column;
+    }
+
+    .info-cards-title, .info-cards-title-r {
+        font-size: 27px;  /* Ajuste de tamanho para títulos menores */
+        font-weight: 700;
+        color: #020C2F;
+    }
+
+    .info-cards-desc, .info-cards-desc-r {
+        font-size: 14px;  /* Ajuste do tamanho da descrição */
+        font-weight: 200;
+        max-width: 100%;  /* Ajuste do tamanho das descrições */
+        text-align: center;
+        color: #020C2F;
+    }
+
+    .icon-cards img, .icon-cards-r img {
+        width: 100%; /* Garantir que a imagem ocupe toda a largura da div */
+        height: 100%; /* Garantir que a altura seja proporcional */
+    }
+
+    /* Contatos */
+    #contatos {
+        width: 100%;
+        height: auto;  /* Ajuste da altura */
+        background-image: url('../assets/background-three.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .contatos-title {
+        font-size: 58px;  /* Ajuste do tamanho do título */
+        font-weight: 700;
+        color: #02D703;
+        text-align: center;
+    }
+
+    .contatos-loc {
+        font-size: 26px;  /* Reduzindo o tamanho do texto do endereço */
+        font-weight: 400;
+        color: #fff;
+        text-align: center;
+    }
+
+    .contatos-midias {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .contatos-card img {
+        width: 60px;  /* Reduzindo o tamanho dos ícones */
+        height: 60px;
+        border-radius: 15px;
+    }
+
+    .contatos-card img:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    /* Footer */
+    footer {
+        background-color: black;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-copy {
+        color: #fff;
+        font-size: 12px;  /* Ajuste do tamanho do texto */
+    }
+}
