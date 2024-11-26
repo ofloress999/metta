@@ -257,7 +257,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 421px) and (max-width: 768px) {
     /* Geral */
     body {
         background-image: url('../assets/background-one.png');
