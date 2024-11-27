@@ -2,18 +2,18 @@
     /* Geral */
     body {
         background-image: url('../assets/background-one.png');
-        background-size: 100vh  100vw;  /* Mantém a imagem de fundo responsiva */
+        background-size: 100vw  100vh;  /* Mantém a imagem de fundo responsiva */
     }
 
     .container {
         width: 100%;  /* Usando 100% da largura da tela */
-        margin: 0 auto;
+        margin: auto;
     }
 
     /* Inicio Header */
     header {
         height: 50px;
-        width: 100vw;
+        width: 100%;
         display: flex;
         background-color: #ffffffbb;
     }
