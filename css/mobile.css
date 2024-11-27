@@ -2,8 +2,7 @@
     /* Geral */
     body {
         background-image: url('../assets/background-one.png');
-        background-size: 100vw  100vh;  /* Mantém a imagem de fundo responsiva */
-        background-position: center; /* Verificar compatibilidade - possivel alteracao*/
+        background-size: 100vw  100vh;  /* Mantém a imagem de 
       }
 
 
