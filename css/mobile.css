@@ -2,9 +2,8 @@
     /* Geral */
     body {
         background-image: url('../assets/background-one.png');
-        background-size: 100vw  100vh;  /* Mantém a imagem de 
-      }
-
+        background-size: 100vw  100vh;  /* Mantém a imagem de fundo responsiva */
+    }
 
     .container {
         width: 100%;  /* Usando 100% da largura da tela */
@@ -38,8 +37,8 @@
     /* Banner */
     #sec-banner {
         width: 100%;
-        padding-top: 80px; /* Verificar compatibilidade - possivel alteracao*/
-        padding-bottom: 80px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         height: auto;  /* Ajuste da altura do banner para telas pequenas */
         display: flex;
         flex-direction: column;
@@ -95,7 +94,7 @@
     }
 
     .qm-desc {
-        font-size: 18px;  /* Reduzindo o tamanho da descrição */
+        font-size: 12px;  /* Reduzindo o tamanho da descrição */
         font-weight: 400;
         text-align: justify;
         max-width: 100%;  /* Ajuste da largura do texto */

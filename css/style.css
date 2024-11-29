@@ -15,14 +15,14 @@
 body {
     background-image: url('../assets/background-one.png');
     background-repeat: no-repeat;
-    background-size:100vw;
+    background-size:100vw 100vh;
 }
 
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1100px;
+    width: 900px;
     margin: auto;
 }
 
@@ -30,7 +30,8 @@ body {
 header {
     display: flex;
     width: 100%;
-    height: 95px;
+    height: auto;
+    padding: 10px;
     background-color: #ffffffc9;
 }
 
@@ -39,6 +40,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.logo-header-main img {
+    width: 150px;
 }
 
 .nav-header-main ul {
@@ -52,6 +56,7 @@ header {
     border-bottom: 2px solid #020C2F;;
 }
 .nav-header-main ul li a {
+    font-size: 13px;
     font-weight: 700;
     font-style: normal;
     color: #020C2F;
@@ -62,7 +67,7 @@ header {
 
 #sec-banner {
     width: 100%;
-    height: 640px;
+    height: 450px;
     display: flex;
 }
 .banner-main {
@@ -89,9 +94,11 @@ header {
 /* Inicio Quem Somos */
 #quem-somos {
     width: 100%;
-    height: 584px;
+    height: auto;
     background-color: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quem-somos-main {
@@ -102,7 +109,7 @@ header {
     margin-top: 70px;
 }
 .qm-title {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 700;
     color: #020C2F;
 }
@@ -113,12 +120,11 @@ header {
     max-width: 500px;
     margin-top: 20px;
     color: #333333;
-
 }
 
 .qm-image {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
 }
 
 .qm-image img {
@@ -132,7 +138,7 @@ header {
     height: 585px;
     background-image: url('../assets/background-two.png');
     background-repeat: no-repeat;
-    background-size:100vw;
+    background-size:100vw 100vh;
 }
 .comoTrabalhamos-Main {
     margin-top: 50px;
@@ -147,90 +153,75 @@ header {
 }
 
 /* Inicio Serviços*/
-#servicos {
-    width: 100%;
-    height: 500px;
-    background-color: #fff;
-    padding: 20px;
+
+.swiper-slide {
+    width: 400Px !important; /* Ou ajuste conforme necessário */
+}
+
+#servicosNew {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 450px;
+    margin-bottom: 20px;
 }
-.servicos-Main {
+
+.card-list .card-item {
+    color: #fff;
+    width: 400PX;
+    height: 280px ;
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(5, 14, 49, 0.959);
+    border: 2px solid rgb(5, 231, 62);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.37)
 }
-.servicos-text {
-    font-size: 70px;
+
+.card-list .card-item .user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid #02D703;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
+
+.user-name {
+    text-transform: uppercase;
     font-weight: 700;
-    color: #020C2F;
 }
 
-.servicos-grid {
-    display: flex;
-    gap: 60px;
-}
-
-.columns-servicos-left, .columns-servicos-rigth {
+.container2 {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
-.servicos-cards {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    gap: 15px;
-}
-.info-cards {
-    text-align: right;
-}
-
-.info-cards-title {
-    font-size: 24px;
+.servicos-title {
+    color: #020C2F;
+    font-size: 50px;
+    text-align: center;
     font-weight: 700;
-    color: #020C2F;
-}
-.info-cards-desc {
-    font-size: 16px;
-    font-weight: 200;
-    max-width: 300px;
-    text-align: right;
-    color: #020C2F;
-}
-.icon-cards,.icon-cards-r {
-    width: 75px;
-    height: 75px;
+
 }
 
 
 
-.servicos-cards-r {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: right;
-    gap: 15px;
-}
-.info-cards-r {
-    text-align: left;
-}
 
-.info-cards-title-r {
-    font-size: 24px;
-    font-weight: 700;
-    color: #020C2F;
-}
-.info-cards-desc-r {
-    font-size: 16px;
-    font-weight: 200;
-    max-width: 300px;
-    color: #020C2F;
-}
+
 
 /* Inicio Contatos */
 #contatos {
@@ -249,7 +240,7 @@ header {
 }
 
 .contatos-title {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 700;
     color: #02D703;
 }
@@ -260,7 +251,7 @@ header {
     gap: 30px;
 }
 .contatos-loc {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -271,14 +262,14 @@ header {
 }
 
 .contatos-card img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 15px;
 }
 
 .contatos-card img:hover {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 15px;
     transform: scale(1.1);
     transition: 0.5s;
@@ -288,10 +279,11 @@ header {
 /*Inicio Footer*/
 footer {
     background-color: black;
-    height: 60px;
+    height: 30px;
     display: flex;
 }
 .footer-copy {
     color: #fff;
-    font-size: 14px;
+    font-size: 9px;
+    font-weight: 200;
 }

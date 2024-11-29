@@ -6,8 +6,12 @@
 
     <title>Metta Contabilidade</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!--Link CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <!--Link Script-->
     <script defer src="js/script.js"></script>
 
 </head>
@@ -23,7 +27,7 @@
                     <ul>
                         <li><a href="#quem-somos">QUEM SOMOS</a></li>
                         <li><a href="#como-trabalhamos">COMO TRABALHAMOS</a></li>
-                        <li><a href="#servicos">SERVIÇOS</a></li>
+                        <li><a href="#servicosNew">SERVIÇOS</a></li>
                         <li><a href="#contatos">CONTATOS</a></li>
                     </ul>
                 </div>
@@ -67,105 +71,61 @@
         </div>
     </section>
 
-    <section id="servicos">
-        <div class="container">
-            <div class="servicos-Main">
-                <div class="servicos-text">SERVIÇOS</div>
 
-                <div class="servicos-grid">
+    <section id="servicosNew">
+        <div class="container2 swiper">
+            <div class="servicos-title">
+                SERVIÇOS
+            </div>
+            <div class="slider-wrapper">
+                <div class="card-list swiper-wrapper">
 
-                    <div class="columns-servicos-left">
-
-                        <div class="servicos-cards">
-                            <div class="info-cards">
-                                <div class="info-cards-title">Fiscal</div>
-                                <div class="info-cards-desc">
-                                    Planejamento Tributário e Fiscal
-                                </div>
-                            </div>
-                            <div class="icon-cards">
-                                <img src="assets/fiscal.png">
-                            </div>
-                        </div>
-
-
-                        <!-- -->
-
-                        <div class="servicos-cards">
-                            <div class="info-cards">
-                                <div class="info-cards-title">Contábil</div>
-                                <div class="info-cards-desc">
-                                    Gestão contábil voltada para empresas dos mais diversos segmentos.
-                                </div>
-                            </div>
-                            <div class="icon-cards">
-                                <img src="assets/contabil.png">
-                            </div>
-                        </div>
-
-                        <!-- -->
-
-                        <div class="servicos-cards">
-                            <div class="info-cards">
-                                <div class="info-cards-title">Produtor Rural</div>
-                                <div class="info-cards-desc">
-                                    Todo suporteo ao produtor e empresas rurais.
-                                </div>
-                            </div>
-                            <div class="icon-cards">
-                                <img src="assets/rural.png">
-                            </div>
-                        </div>
-
+                    <div class="card-item swiper-slide">
+                        <img src="assets/fiscal.png" class="user-image">
+                        <h2 class="user-name">Fiscal</h2>
+                        <p class="user-profession">Planejamento Tributário e Fiscal</p>
                     </div>
 
-
-
-                    <div class="columns-servicos-rigth">
-
-                        <div class="servicos-cards-r">
-                            <div class="info-cards-r">
-                                <div class="info-cards-title-r">Pessoa Fisica</div>
-                                <div class="info-cards-desc-r">
-                                    Declarações de imposto de renda pessoa fisica.
-                                </div>
-                            </div>
-                            <div class="icon-cards-r">
-                                <img src="assets/pf.png">
-                            </div>
-                        </div>
-
-                        <div class="servicos-cards-r">
-                            <div class="info-cards-r">
-                                <div class="info-cards-title-r">CNPJ</div>
-                                <div class="info-cards-desc-r">
-                                    Abertura, fechamento, alteração e legalização de empresas</div>
-                                </div>
-                            <div class="icon-cards-r">
-                                <img src="assets/cnpj.png">
-                            </div>
-                        </div>
-
-                        <div class="servicos-cards-r">
-                            <div class="info-cards-r">
-                                <div class="info-cards-title-r">Trabalhista</div>
-                                <div class="info-cards-desc-r">
-                                    Consultoria, processamento de folha, cálculos e obrigações acessórias
-                                </div>
-                            </div>
-                            <div class="icon-cards-r">
-                                <img src="assets/trab.png">
-                            </div>
-                        </div>
-                        
+                    <div class="card-item swiper-slide">
+                        <img src="assets/contabil.png" class="user-image">
+                        <h2 class="user-name">Contabil</h2>
+                        <p class="user-profession">Gestão contábil voltada para empresas dos mais diversos segmentos.</p>
                     </div>
 
+                    <div class="card-item swiper-slide">
+                        <img src="assets/rural.png" class="user-image">
+                        <h2 class="user-name">Produtor Rural</h2>
+                        <p class="user-profession">Todo suporte ao produtor e empresas rurais.</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="assets/fiscal.png" class="user-image">
+                        <h2 class="user-name">Pessoas Fisicas</h2>
+                        <p class="user-profession">Declarações de imposto de renda pessoa fisica.</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="assets/cnpj.png" class="user-image">
+                        <h2 class="user-name">CNPJ</h2>
+                        <p class="user-profession">Abertura, fechamento, alteração e legalização de empresas</p>
+                    </div>
+
+                    <div class="card-item swiper-slide">
+                        <img src="assets/trab.png" class="user-image">
+                        <h2 class="user-name">TRABALHISTA</h2>
+                        <p class="user-profession">Consultoria, processamento de folha, cálculos e obrigações acessórias</p>
+                    </div>
 
                 </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
 
             </div>
         </div>
     </section>
+
 
     <section id="contatos">
         <div class="container">
@@ -187,7 +147,7 @@
                         </div>
 
                         <div class="contatos-card">
-                            <a target="_blank" href="https://wa.me/+5535998045929">
+                            <a target="_blank" href="https://l.instagram.com/?u=https%3A%2F%2Fwa.me%2F553598045929&e=AT0Omx8xHn_H2UxyVVW61iZ0wJh0ZoZIIE_NgkQlTOqo7WN4MXxgLpINdcbKbiQ79TwBc_NqgZqqyr8-sKMLKg0ZXhMf3ptg">
                                 <img src="assets/whatsapp.png">
                             </a>
                         </div>
@@ -209,5 +169,6 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
