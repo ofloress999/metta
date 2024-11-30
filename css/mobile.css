@@ -1,8 +1,7 @@
 @media (min-width: 320px) and (max-width: 420px) {
     /* Geral */
     body {
-        background-image: url('../assets/background-one.png');
-        background-size: 100vw  100vh;  /* Mantém a imagem de fundo responsiva */
+        background: url('../assets/background-one.png') no-repeat;
     }
 
     .container {
@@ -37,17 +36,22 @@
     /* Banner */
     #sec-banner {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        height: auto;  /* Ajuste da altura do banner para telas pequenas */
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 100vh;  /* Ajuste da altura do banner para telas pequenas */
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .banner-main {
+        display: flex;
+        flex-direction: column;
     }
 
     .banner-h1 {
-        font-size: 63px;  /* Reduz o tamanho do título */
+        font-size: 86px;  /* Reduz o tamanho do título */
         color: #02D703;
         font-weight: 900;
     }
@@ -55,10 +59,10 @@
     .banner-p {
         font-size: 16px;  /* Reduz o tamanho do texto */
         color: #fff;
-        font-weight: 300;
+        font-weight: 200;
         text-align: center;
-        max-width: 90%;  /* Ajuste da largura do texto */
-        margin-top: 10px;
+        max-width: 70%;  /* Ajuste da largura do texto */
+        margin-top: px;
     }
 
     /* Quem Somos */
@@ -89,15 +93,18 @@
     }
 
     .qm-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 15;
         margin-top: 10px;
         text-align: center;
     }
 
     .qm-desc {
-        font-size: 12px;  /* Reduzindo o tamanho da descrição */
+        font-size: 14px;  /* Reduzindo o tamanho da descrição */
         font-weight: 400;
         text-align: justify;
-        max-width: 100%;  /* Ajuste da largura do texto */
+        width: 320px;
         margin-top: 10px;
         color: #333333;
     }
@@ -130,73 +137,76 @@
         text-align: center;
     }
 
-    /* Serviços */
-    #servicos {
-        width: 100%;
-        padding: 20px;
-        height: auto;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 
-    .servicos-text {
-        font-size: 30px;  /* Ajuste do tamanho do texto */
-        font-weight: 700;
-        color: #020C2F;
-    }
+/* Inicio Serviços*/
+.swiper-slide {
+    width: 250Px !important; /* Ou ajuste conforme necessário */
+}
 
-    .columns-servicos-left, .columns-servicos-rigth {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+#servicosNew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin-bottom: 0px;
+    background-color:#fff ;
+}
 
-    .servicos-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
+.card-list .card-item {
+    color: #fff;
+    width: 400PX;
+    height: 280px ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(5, 14, 49, 0.959);
+    border: 2px solid rgb(5, 231, 62);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.37)
+}
 
-    .servicos-cards, .servicos-cards-r {
-        display: flex;
-        align-items: center; /* Alinha verticalmente */
-        justify-content: center; /* Centraliza horizontalmente */
-        flex-direction:column-reverse;
-        gap: 5px;
-    }
+.card-list .card-item .user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid #02D703;
+    padding: 4px;
+}
 
-    .info-cards, .info-cards-r {
-        width: auto;
-        height: auto;
-        display: flex;
-        justify-content: start; /* Garantir que o conteúdo dentro da icon-cards seja centralizado */
-        align-items: center; /* Garantir o alinhamento vertical */
-        flex-direction: column;
-    }
+.card-list .card-item .user-profession {
+    text-align: center;
+    font-size: 12px;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
 
-    .info-cards-title, .info-cards-title-r {
-        font-size: 18px;  /* Ajuste de tamanho para títulos menores */
-        font-weight: 700;
-        color: #020C2F;
-    }
+.user-name {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 
-    .info-cards-desc, .info-cards-desc-r {
-        font-size: 14px;  /* Ajuste do tamanho da descrição */
-        font-weight: 200;
-        max-width: 100%;  /* Ajuste do tamanho das descrições */
-        text-align: center;
-        color: #020C2F;
-    }
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
-    .icon-cards img, .icon-cards-r img {
-        width: 100%; /* Garantir que a imagem ocupe toda a largura da div */
-        height: 100%; /* Garantir que a altura seja proporcional */
-    }
+.servicos-title {
+    color: #020C2F;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
 
-    /* Contatos */
+}
+
+/* Contatos */
     #contatos {
         width: 100%;
         height: auto;  /* Ajuste da altura */
