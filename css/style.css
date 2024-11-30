@@ -1,0 +1,298 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior:smooth;
+}
+
+body {
+    background-image: url('../assets/bgblur1.png');
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+}
+
+/* Inicio Header */
+header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background-color: #ffffffc9;
+}
+
+.header-main {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-header-main img {
+    width: 150px;
+}
+
+.nav-header-main ul {
+    display: flex;
+    gap: 10px;
+}
+.nav-header-main ul li {
+    padding-right: 10px;
+    border-right: 1.5px solid #020c2f;
+}
+
+.nav-header-main ul li a {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: normal;
+    color: #020C2F;
+    padding-bottom: 1.5px;
+    border-bottom: 1px solid #f0f0f000;;
+}
+.nav-header-main ul li a:hover {
+    padding-bottom: 1.5px;
+    border-bottom: 1px solid #020C2F;;
+}
+
+
+/* Inicio Banner */
+
+#sec-banner {
+    width: 100%;
+    height: 519px;
+    display: flex;
+}
+
+.banner-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-h1 {
+    font-size: 120px;
+    color: #02D703;
+    font-weight: 700;
+    font-style:oblique;
+}
+.banner-p {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 500px;
+    text-align: center;
+    margin-top: -15px;
+}
+
+/* Inicio Quem Somos */
+#quem-somos {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.quem-somos-main {
+    display: flex;
+    gap: 30px;
+}
+.qm-txt {
+    margin-top: 70px;
+}
+.qm-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #020C2F;
+}
+.qm-desc {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    max-width: 500px;
+    margin-top: 20px;
+    color: #333333;
+}
+
+.qm-image {
+    width: 400px;
+    height: 400px;
+}
+
+.qm-image img {
+    width: inherit;
+    height: inherit;
+}
+
+/* Inicio Quem Somos */
+#como-trabalhamos {
+    width: 100%;
+    height: 585px;
+    background-image: url('../assets/background-two.png');
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+}
+.comoTrabalhamos-Main {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comoTrabalhamos-title{
+    color: #02D703;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/* Inicio Serviços*/
+
+.swiper-slide {
+    width: 400Px !important; /* Ou ajuste conforme necessário */
+}
+
+#servicosNew {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.card-list .card-item {
+    color: #fff;
+    width: 400PX;
+    height: 280px ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background-color: rgba(5, 14, 49, 0.959);
+    border: 2px solid rgb(5, 231, 62);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.37)
+}
+
+.card-list .card-item .user-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid #02D703;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
+
+.user-name {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.servicos-title {
+    color: #020C2F;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+
+}
+
+
+
+
+
+
+/* Inicio Contatos */
+#contatos {
+    width: 100%;
+    height: 400px;
+    background-image: url('../assets/background-three.png');
+    background-repeat: no-repeat;
+    background-size:100vw;
+    display: flex;
+}
+
+.contatos-main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contatos-title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #02D703;
+}
+.contatos-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.contatos-loc {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+.contatos-midias{
+    display: flex;
+    gap: 20px;
+}
+
+.contatos-card img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.contatos-card img:hover {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+/*Inicio Footer*/
+footer {
+    background-color: black;
+    height: 30px;
+    display: flex;
+}
+.footer-copy {
+    color: #fff;
+    font-size: 9px;
+    font-weight: 200;
+}
